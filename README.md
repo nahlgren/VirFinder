@@ -12,6 +12,8 @@ The package provides functions to predict viral sequences in a fasta file, such 
 
 The prediction method is based on the sequence signatures (k-tuple word frequencies) that distinguish virus from host sequences. The model was trained using equal number of known viral and host sequences. For a query sequence, the number of occurrences of k-tuple words are first counted by a c++ program using a hash table. Then the sequence is predicted based on the k-tuple word frequencies using a logistic regression model trained with previously known sequences.
 
+More about VirFinder and its validation are decribed in detail in the following article: "VirFinder: a novel k-mer based tool for identifying viral sequences from assembled metagenomic data" Microbiome (accepted). Please cite this article when publishing results using VirFinder.
+
 
 
 Dependencies
